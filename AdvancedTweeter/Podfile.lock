@@ -1,0 +1,33 @@
+PODS:
+  - Dynatrace (8.181.1):
+    - Dynatrace/framework (= 8.181.1)
+  - Dynatrace/framework (8.181.1)
+  - Sentry (5.0.0-beta.2):
+    - Sentry/Core (= 5.0.0-beta.2)
+  - Sentry/Core (5.0.0-beta.2)
+
+DEPENDENCIES:
+  - Dynatrace (~> 8.181)
+  - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `5.0.0-beta.2`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Dynatrace
+
+EXTERNAL SOURCES:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 5.0.0-beta.2
+
+CHECKOUT OPTIONS:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 5.0.0-beta.2
+
+SPEC CHECKSUMS:
+  Dynatrace: a5ac0be5e507fd1b5d3695bf12682a7b5b808aad
+  Sentry: bb91c8e9dd8db80145391eddd47fe908cb2fe0d5
+
+PODFILE CHECKSUM: b224fb6bbfcbe3c75f3b75a52e6b73158576c904
+
+COCOAPODS: 1.6.1

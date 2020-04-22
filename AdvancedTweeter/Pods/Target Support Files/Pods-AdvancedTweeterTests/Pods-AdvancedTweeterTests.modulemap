@@ -1,0 +1,6 @@
+framework module Pods_AdvancedTweeterTests {
+  umbrella header "Pods-AdvancedTweeterTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

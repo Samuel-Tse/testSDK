@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AdvancedTweeter' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for AdvancedTweeter
+  pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '5.0.0-beta.2'
+  pod 'Dynatrace', '~> 8.181'
+  
+  target 'AdvancedTweeterTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AdvancedTweeterUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
