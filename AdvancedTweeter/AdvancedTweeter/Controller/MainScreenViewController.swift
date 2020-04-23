@@ -65,10 +65,16 @@ class MainScreenViewController: UIViewController {
     
     func loggReportForDynatrace() {
         //Do logging for Dybatrace here:
-        Dynatrace.identifyUser(userName)
-//        DTXAction.reportError(withName: "My custom error", error: NSError(domain: "Global issue", code: 007, userInfo: nil))
+        
+        // start action "search"
+        let action = DTXAction.enter(withName: #function)
+        // ...do some work here...
+        // end action "search"
+        action?.leave()
+        
+        
         let myAction = DTXAction.enter(withName: #function)
-        myAction?.reportEvent(withName: "Something important just happened")
+        myAction?.reportError(withName: "My custom error", error: NSError(domain: "Action issue", code: 007, userInfo: nil))
         myAction?.leave()
         
         debugPrint("Dynatrace report logged here!!")
