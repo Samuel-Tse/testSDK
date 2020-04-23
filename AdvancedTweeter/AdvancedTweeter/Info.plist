@@ -48,13 +48,15 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>DTXLogLevel</key>
+	<string>ALL</string>
 	<key>DTXApplicationID</key>
 	<string>19d4e757-0842-4830-bafc-0421223f7cc0</string>
 	<key>DTXBeaconURL</key>
 	<string>https://bf40161gnl.bf.dynatrace.com/mbeacon</string>
-	<key>DTXUserOptIn</key>
+	<key>DTXAgentStartupPath</key>
+	<string>https://bf40161gnl.bf.dynatrace.com/mbeacon</string>
+	<key>DTXInstrumentAutoUserAction</key>
 	<true/>
-	<key>DTXLogLevel</key>
-	<string>NONE</string>
 </dict>
 </plist>

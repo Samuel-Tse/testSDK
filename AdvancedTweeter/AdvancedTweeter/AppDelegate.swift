@@ -25,6 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             "dsn": "https://483cb2ac862547bb846109a5f441b1dc@o378540.ingest.sentry.io/5202070",
             "debug": true // Enabled debug when first installing is always helpful
         ])
+        
+        Dynatrace.startupWithInfoPlistSettings()
+        Dynatrace.enableCrashReporting(withReport: true)
+        
+        
 //        SentrySDK.capture(message: "My first test message")
 //        SentrySDK.crash()
         
